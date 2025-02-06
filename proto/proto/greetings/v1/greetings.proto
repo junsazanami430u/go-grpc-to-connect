@@ -4,11 +4,14 @@ package greetings.v1;
 
 import "validate/validate.proto";
 
+import "buf/validate/validate.proto";
+
 message GetGreetingsRequest {
   string greetings = 1[(validate.rules).string = {
     pattern:   "^[A-Za-z]+( [A-Za-z]+)*$",
     max_bytes: 256,
   }];
+  string name = 2 [ (buf.validate.field).string.min_len = 3 ]; 
 }
 
 message GetGreetingsResponse {

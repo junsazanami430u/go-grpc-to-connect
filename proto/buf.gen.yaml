@@ -4,6 +4,8 @@ managed:
   disable:
     - file_option: go_package
       module: buf.build/envoyproxy/protoc-gen-validate
+    - file_option: go_package
+      module: buf.build/bufbuild/protovalidate
   override:
     - file_option: go_package_prefix
       value: github.com/baleen-dyamaguchi/go-grpc-to-connect/pkg/gen/proto
