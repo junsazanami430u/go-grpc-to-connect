@@ -7,7 +7,7 @@
 package greetingsv1
 
 import (
-	_ "github.com/baleen-dyamaguchi/go-grpc-to-connect/pkg/gen/proto/validate"
+	_ "github.com/envoyproxy/protoc-gen-validate/validate"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

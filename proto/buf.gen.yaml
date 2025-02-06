@@ -1,6 +1,9 @@
 version: v2
 managed:
   enabled: true
+  disable:
+    - file_option: go_package
+      module: buf.build/envoyproxy/protoc-gen-validate
   override:
     - file_option: go_package_prefix
       value: github.com/baleen-dyamaguchi/go-grpc-to-connect/pkg/gen/proto
@@ -10,14 +13,14 @@ plugins:
     opt: paths=source_relative
   - local: protoc-gen-go-grpc
     out: ../pkg/gen/proto
-    opt: paths=source_relative
-  - local: protoc-gen-connect-go
-    out: ../pkg/gen/proto
-    opt: paths=source_relative
+    opt:
+      - paths=source_relative
+      - require_unimplemented_servers=true
   - local: protoc-gen-validate
     out: ../pkg/gen/proto
     opt:
       - paths=source_relative
       - lang=go
-inputs:
-  - directory: proto
+  - local: protoc-gen-connect-go
+    out: ../pkg/gen/proto
+    opt: paths=source_relative
