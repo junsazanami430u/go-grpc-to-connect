@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package greetings.v1;
+
+import "validate/validate.proto";
+
+message GetGreetingsRequest {
+  string greetings = 1[(validate.rules).string = {
+    pattern:   "^[A-Za-z]+( [A-Za-z]+)*$",
+    max_bytes: 256,
+  }];
+}
+
+message GetGreetingsResponse {
+  string greetings = 1;
+}
+
+service GreetingsService {
+  rpc GetGreetings (GetGreetingsRequest) returns (GetGreetingsResponse);
+}
