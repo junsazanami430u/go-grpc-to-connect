@@ -13,6 +13,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
+	"google.golang.org/grpc/resolver"
 	"google.golang.org/grpc/test/bufconn"
 )
 
@@ -84,8 +85,9 @@ func TestApiGreetings(t *testing.T) {
 	expected := &greetingsv1.GetGreetingsResponse{
 		Greetings: "Hello John",
 	}
+	resolver.SetDefaultScheme("passthrough")
 	opt := grpc.WithTransportCredentials(insecure.NewCredentials())
-	conn, err := grpc.DialContext(ctx, "bufnet", grpc.WithContextDialer(bufDialer), opt)
+	conn, err := grpc.NewClient("bufnet", grpc.WithContextDialer(bufDialer), opt)
 	if err != nil {
 		t.Fatal(err)
 	}

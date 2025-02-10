@@ -15,7 +15,7 @@ func main() {
 
 	log := logger.FromContext(ctx)
 
-	conn, err := grpc.DialContext(ctx, "localhost:50051", grpc.WithTransportCredentials(insecure.NewCredentials()))
+	conn, err := grpc.NewClient("localhost:50051", grpc.WithTransportCredentials(insecure.NewCredentials()))
 	if err != nil {
 		log.Error("fail to dial: %v", "error", err)
 	}
