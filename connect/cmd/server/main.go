@@ -18,7 +18,6 @@ import (
 func main() {
 	ctx := logger.InitLogger(context.Background(), slog.LevelDebug)
 	log := logger.FromContext(ctx)
-	addr := "localhost:8080"
 
 	validateInterceptor, err := validate.NewInterceptor()
 	if err != nil {
@@ -28,12 +27,12 @@ func main() {
 	path, handler := greetingsv1connect.NewGreetingsServiceHandler(&greetings.GreetingsServer{}, connect.WithInterceptors(validateInterceptor, interceptor.NewValidateInterceptor()))
 	mux.Handle(path, handler)
 	server := &http.Server{
-		Addr:    addr,
+		Addr:    "localhost:8080",
 		Handler: h2c.NewHandler(mux, &http2.Server{}),
 	}
 
 	go func() {
-		log.Info("greetings.server is running", "Host", addr)
+		log.Info("greetings.server is running", "Host", server.Addr)
 	}()
 
 	err = server.ListenAndServe()
