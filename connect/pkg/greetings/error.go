@@ -5,7 +5,7 @@ import (
 	"github.com/friendsofgo/errors"
 )
 
-func error_InvalidArgment(msg string) error {
+func error_InvalidArgument(msg string) error {
 	return connect.NewError(connect.CodeInvalidArgument, errors.New(msg))
 }
 

@@ -17,10 +17,10 @@ type GreetingsServer struct {
 func (s *GreetingsServer) GetGreetings(ctx context.Context, req *connect.Request[greetingsv1.GetGreetingsRequest]) (*connect.Response[greetingsv1.GetGreetingsResponse], error) {
 	log := logger.FromContext(ctx)
 	if req.Msg.Greetings == "" {
-		return nil, error_InvalidArgment("invalid greetings")
+		return nil, error_InvalidArgument("invalid greetings")
 	}
 	if req.Msg.Name == "" {
-		return nil, error_InvalidArgment("invalid name")
+		return nil, error_InvalidArgument("invalid name")
 	}
 	log.Debug("greetings.greetings", "Name", req.Msg.Name, "greetings", req.Msg.Greetings)
 	return connect.NewResponse(&greetingsv1.GetGreetingsResponse{Greetings: fmt.Sprintf("Hello %s", req.Msg.Name)}), nil

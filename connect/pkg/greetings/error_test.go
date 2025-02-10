@@ -8,9 +8,9 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestError_InvalidArgment(t *testing.T) {
+func TestError_InvalidArgument(t *testing.T) {
 	expected := connect.NewError(connect.CodeInvalidArgument, errors.New("test"))
-	err := error_InvalidArgment("test")
+	err := error_InvalidArgument("test")
 	if result := new(connect.Error); errors.As(err, &result) {
 		if err != nil {
 		}

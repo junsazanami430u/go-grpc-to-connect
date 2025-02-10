@@ -5,7 +5,7 @@ import (
 	"google.golang.org/grpc/status"
 )
 
-func error_InvalidArgment(msg string) *status.Status {
+func error_InvalidArgument(msg string) *status.Status {
 	return status.New(codes.InvalidArgument, msg)
 }
 

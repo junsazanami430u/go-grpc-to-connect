@@ -8,9 +8,9 @@ import (
 	"google.golang.org/grpc/status"
 )
 
-func TestError_InvalidArgment(t *testing.T) {
+func TestError_InvalidArgument(t *testing.T) {
 	expected := status.New(codes.InvalidArgument, "test")
-	status := error_InvalidArgment("test")
+	status := error_InvalidArgument("test")
 	assert.Equal(t, status, expected)
 }
 func TestError_Unknown(t *testing.T) {
