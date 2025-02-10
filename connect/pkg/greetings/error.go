@@ -5,10 +5,10 @@ import (
 	"github.com/friendsofgo/errors"
 )
 
-func error_InvalidArgument(msg string) error {
+func errorInvalidArgument(msg string) error {
 	return connect.NewError(connect.CodeInvalidArgument, errors.New(msg))
 }
 
-func error_Unknown(msg string) error {
+func errorUnknown(msg string) error {
 	return connect.NewError(connect.CodeUnknown, errors.New(msg))
 }

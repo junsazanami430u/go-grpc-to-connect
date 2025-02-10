@@ -10,11 +10,11 @@ import (
 
 func TestError_InvalidArgument(t *testing.T) {
 	expected := status.New(codes.InvalidArgument, "test")
-	status := error_InvalidArgument("test")
+	status := errorInvalidArgument("test")
 	assert.Equal(t, status, expected)
 }
 func TestError_Unknown(t *testing.T) {
 	expected := status.New(codes.Unknown, "test")
-	status := error_Unknown("test")
+	status := errorUnknown("test")
 	assert.Equal(t, status, expected)
 }

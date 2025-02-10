@@ -10,7 +10,7 @@ import (
 
 func TestError_InvalidArgument(t *testing.T) {
 	expected := connect.NewError(connect.CodeInvalidArgument, errors.New("test"))
-	err := error_InvalidArgument("test")
+	err := errorInvalidArgument("test")
 	if result := new(connect.Error); errors.As(err, &result) {
 		if err != nil {
 		}
@@ -20,7 +20,7 @@ func TestError_InvalidArgument(t *testing.T) {
 }
 func TestError_Unknown(t *testing.T) {
 	expected := connect.NewError(connect.CodeUnknown, errors.New("test"))
-	err := error_Unknown("test")
+	err := errorUnknown("test")
 	if result := new(connect.Error); errors.As(err, &result) {
 		if err != nil {
 		}
