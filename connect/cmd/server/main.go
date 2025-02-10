@@ -24,9 +24,8 @@ func main() {
 	if err != nil {
 		log.Error("greetings.server", "error", err)
 	}
-	greeter := &greetings.GreetingsServer{}
 	mux := http.NewServeMux()
-	path, handler := greetingsv1connect.NewGreetingsServiceHandler(greeter, connect.WithInterceptors(validateInterceptor, interceptor.NewValidateInterceptor()))
+	path, handler := greetingsv1connect.NewGreetingsServiceHandler(&greetings.GreetingsServer{}, connect.WithInterceptors(validateInterceptor, interceptor.NewValidateInterceptor()))
 	mux.Handle(path, handler)
 	server := &http.Server{
 		Addr:    addr,
