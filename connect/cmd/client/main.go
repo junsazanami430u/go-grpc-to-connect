@@ -12,13 +12,14 @@ import (
 )
 
 func main() {
+	ctx := logger.InitLogger(context.Background(), slog.LevelInfo)
+
+	log := logger.FromContext(ctx)
+
 	client := greetingsv1connect.NewGreetingsServiceClient(
 		http.DefaultClient,
 		"http://localhost:8080",
 	)
-	ctx := logger.InitLogger(context.Background(), slog.LevelInfo)
-
-	log := logger.FromContext(ctx)
 	res, err := client.GetGreetings(
 		ctx,
 		connect.NewRequest(&greetingsv1.GetGreetingsRequest{Name: "Jane", Greetings: "Hello"}),
