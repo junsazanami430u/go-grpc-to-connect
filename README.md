@@ -29,7 +29,7 @@
 
     クライアントからリクエストを送信
     ```bash
-    make connect
+    make client
     ```
 
 ## test

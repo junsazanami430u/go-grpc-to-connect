@@ -29,7 +29,7 @@ tidy:
 serve:
 	go run cmd/server/main.go
 
-## client-connect
-.PHONY: connect
-connect:
+## client
+.PHONY: client
+client:
 	go run cmd/client/main.go
