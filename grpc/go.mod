@@ -1,6 +1,6 @@
 module github.com/baleen-dyamaguchi/go-grpc-to-connect/grpc
 
-go 1.23.6
+go 1.24.0
 
 require (
 	github.com/baleen-dyamaguchi/go-grpc-to-connect/pkg/gen/proto v0.0.0-20250210065821-5f5e8fe4640b

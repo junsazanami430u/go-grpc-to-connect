@@ -1,6 +1,6 @@
 module github.com/baleen-dyamaguchi/go-grpc-to-connect/connect
 
-go 1.23.6
+go 1.24.0
 
 require (
 	connectrpc.com/connect v1.18.1

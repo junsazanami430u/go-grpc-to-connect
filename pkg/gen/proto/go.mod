@@ -1,6 +1,6 @@
 module github.com/baleen-dyamaguchi/go-grpc-to-connect/pkg/gen/proto
 
-go 1.23.6
+go 1.24.0
 
 require (
 	buf.build/gen/go/bufbuild/protovalidate/protocolbuffers/go v1.36.4-20250130201111-63bb56e20495.1
