@@ -31,6 +31,9 @@ func main() {
 	go func() {
 		log.Info("greetings.server is running", "Addr", lis.Addr())
 	}()
-	grpcServer.Serve(lis)
+	err = grpcServer.Serve(lis)
+	if err != nil {
+		log.Error("failed to serve: %v", "error", err)
+	}
 
 }

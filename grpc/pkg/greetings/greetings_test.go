@@ -32,13 +32,13 @@ func TestGetGreetings(t *testing.T) {
 	assert.NoError(t, err)
 	assert.Equal(t, result, expected)
 
-	result, err = g.GetGreetings(ctx, &greetingsv1.GetGreetingsRequest{
+	_, err = g.GetGreetings(ctx, &greetingsv1.GetGreetingsRequest{
 		Name:      "",
 		Greetings: "Hello",
 	})
 
 	assert.Error(t, err)
-	result, err = g.GetGreetings(ctx, &greetingsv1.GetGreetingsRequest{
+	_, err = g.GetGreetings(ctx, &greetingsv1.GetGreetingsRequest{
 		Name:      "",
 		Greetings: "",
 	})
