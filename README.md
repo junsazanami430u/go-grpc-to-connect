@@ -1,7 +1,7 @@
 # go-grpc-to-connect
 
 このプロジェクトは、既存のgRPCベースのサービスをConnectフレームワークに移行することを目的としています。
-詳しくは、[zenn]()を参照してください。
+詳しくは、[zenn](https://zenn.dev/baleenstudio/articles/133bf2bccf515a)を参照してください。
 
 ## インストール
 
