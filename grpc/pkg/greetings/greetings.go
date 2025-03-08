@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/baleen-dyamaguchi/go-grpc-to-connect/grpc/pkg/logger"
-	greetingsv1 "github.com/baleen-dyamaguchi/go-grpc-to-connect/pkg/gen/proto/greetings/v1"
+	"github.com/junsazanami430u/go-grpc-to-connect/grpc/pkg/logger"
+	greetingsv1 "github.com/junsazanami430u/go-grpc-to-connect/pkg/gen/proto/greetings/v1"
 )
 
 type GreetingsServer struct {

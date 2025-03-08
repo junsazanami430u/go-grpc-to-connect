@@ -1,11 +1,11 @@
-module github.com/baleen-dyamaguchi/go-grpc-to-connect/grpc
+module github.com/junsazanami430u/go-grpc-to-connect/grpc
 
 go 1.24.0
 
 require (
-	github.com/baleen-dyamaguchi/go-grpc-to-connect/pkg/gen/proto v0.0.0-20250210065821-5f5e8fe4640b
 	github.com/bufbuild/protovalidate-go v0.9.1
 	github.com/grpc-ecosystem/go-grpc-middleware v1.4.0
+	github.com/junsazanami430u/go-grpc-to-connect/pkg/gen/proto v0.0.0-20250308052335-4b4eddd4f142
 	github.com/stretchr/testify v1.10.0
 	google.golang.org/grpc v1.70.0
 	google.golang.org/protobuf v1.36.5

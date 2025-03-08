@@ -6,11 +6,11 @@ import (
 	"log/slog"
 	"net"
 
-	"github.com/baleen-dyamaguchi/go-grpc-to-connect/grpc/pkg/greetings"
-	"github.com/baleen-dyamaguchi/go-grpc-to-connect/grpc/pkg/interceptor"
-	"github.com/baleen-dyamaguchi/go-grpc-to-connect/grpc/pkg/logger"
-	greetingsv1 "github.com/baleen-dyamaguchi/go-grpc-to-connect/pkg/gen/proto/greetings/v1"
 	grpc_validator "github.com/grpc-ecosystem/go-grpc-middleware/validator"
+	"github.com/junsazanami430u/go-grpc-to-connect/grpc/pkg/greetings"
+	"github.com/junsazanami430u/go-grpc-to-connect/grpc/pkg/interceptor"
+	"github.com/junsazanami430u/go-grpc-to-connect/grpc/pkg/logger"
+	greetingsv1 "github.com/junsazanami430u/go-grpc-to-connect/pkg/gen/proto/greetings/v1"
 	"google.golang.org/grpc"
 )
 
