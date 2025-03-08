@@ -8,7 +8,7 @@ managed:
       module: buf.build/bufbuild/protovalidate
   override:
     - file_option: go_package_prefix
-      value: github.com/baleen-dyamaguchi/go-grpc-to-connect/pkg/gen/proto
+      value: github.com/junsazanami430u/go-grpc-to-connect/pkg/gen/proto
 plugins:
   - local: protoc-gen-go
     out: ../pkg/gen/proto
