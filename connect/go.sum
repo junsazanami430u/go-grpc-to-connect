@@ -350,8 +350,12 @@ github.com/julienschmidt/httprouter v1.2.0/go.mod h1:SYymIcj16QtmaHHD7aYtjjsJG7V
 github.com/julienschmidt/httprouter v1.3.0/go.mod h1:JR6WtHb+2LUe8TCKY3cZOxFyyO8IZAc4RVcycCCAKdM=
 github.com/julz/importas v0.2.0 h1:y+MJN/UdL63QbFJHws9BVC5RpA2iq0kpjrFajTGivjQ=
 github.com/julz/importas v0.2.0/go.mod h1:pThlt589EnCYtMnmhmRYY/qn9lCf/frPOK+WMx3xiJY=
+github.com/junsazanami430u/examples-go/pkg/eliza v0.0.0-20250307094847-37e7a6035ec1 h1:zjpr9rlpaVkg/vV+mh/YswN8l5Z1ignXoDnRFAJkT44=
+github.com/junsazanami430u/examples-go/pkg/eliza v0.0.0-20250307094847-37e7a6035ec1/go.mod h1:t8QOcfHhKuUaCtII3ZGhlK+LYPyP2+fWjKS1teFGfjc=
 github.com/junsazanami430u/go-grpc-to-connect/pkg/gen/proto v0.0.0-20250308052335-4b4eddd4f142 h1:j1n+w6YeeTNXpp0WAKB2rG5ZjirMSLCZTt0+l3lrhrA=
 github.com/junsazanami430u/go-grpc-to-connect/pkg/gen/proto v0.0.0-20250308052335-4b4eddd4f142/go.mod h1:v2HmYVrNMSPcbhBly7JRF9DDhisqNDJCd3u4ReINOAE=
+github.com/junsazanami430u/jsasanami-eliza/pkg/eliza v0.0.0-20250307081406-c9aa1581f118 h1:Uwv37KjzJYbIdWi/kMeN6WHa6V/O1hjw2GgEbBVwY0Q=
+github.com/junsazanami430u/jsasanami-eliza/pkg/eliza v0.0.0-20250307081406-c9aa1581f118/go.mod h1:6SVzfTQmZsg0fZJNEPxhxxKd2FFcm4yNDLGMrqVqu4o=
 github.com/karamaru-alpha/copyloopvar v1.2.1 h1:wmZaZYIjnJ0b5UoKDjUHrikcV0zuPyyxI4SVplLd2CI=
 github.com/karamaru-alpha/copyloopvar v1.2.1/go.mod h1:nFmMlFNlClC2BPvNaHMdkirmTJxVCY0lhxBtlfOypMM=
 github.com/kisielk/errcheck v1.9.0 h1:9xt1zI9EBfcYBvdU1nVrzMzzUPUtPKs9bVSIM3TAb3M=
@@ -500,6 +504,8 @@ github.com/rivo/uniseg v0.4.7/go.mod h1:FN3SvrM+Zdj16jyLfmOkMNblXMcoc8DfTHruCPUc
 github.com/rogpeppe/go-internal v1.3.0/go.mod h1:M8bDsm7K2OlrFYOpmOWEs/qY81heoFRclV5y23lUDJ4=
 github.com/rogpeppe/go-internal v1.14.1 h1:UQB4HGPB6osV0SQTLymcB4TgvyWu6ZyliaW0tI/otEQ=
 github.com/rogpeppe/go-internal v1.14.1/go.mod h1:MaRKkUm5W0goXpeCfT7UZI6fk/L7L7so1lCWt35ZSgc=
+github.com/rs/cors v1.11.1 h1:eU3gRzXLRK57F5rKMGMZURNdIG4EoAmX8k94r9wXWHA=
+github.com/rs/cors v1.11.1/go.mod h1:XyqrcTp5zjWr1wsJ8PIRZssZ8b/WMcMf71DJnit4EMU=
 github.com/russross/blackfriday/v2 v2.1.0/go.mod h1:+Rmxgy9KzJVeS9/2gXHxylqXiyQDYRxCVz55jmeOWTM=
 github.com/ryancurrah/gomodguard v1.3.5 h1:cShyguSwUEeC0jS7ylOiG/idnd1TpJ1LfHGpV3oJmPU=
 github.com/ryancurrah/gomodguard v1.3.5/go.mod h1:MXlEPQRxgfPQa62O8wzK3Ozbkv9Rkqr+wKjSxTdsNJE=
