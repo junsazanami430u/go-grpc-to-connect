@@ -1,4 +1,4 @@
-module github.com/baleen-dyamaguchi/go-grpc-to-connect/pkg/gen/proto
+module github.com/junsazanami430u/go-grpc-to-connect/pkg/gen/proto
 
 go 1.24.0
 

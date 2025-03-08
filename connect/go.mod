@@ -1,12 +1,12 @@
-module github.com/baleen-dyamaguchi/go-grpc-to-connect/connect
+module github.com/junsazanami430u/go-grpc-to-connect/connect
 
 go 1.24.0
 
 require (
 	connectrpc.com/connect v1.18.1
 	connectrpc.com/validate v0.2.0
-	github.com/baleen-dyamaguchi/go-grpc-to-connect/pkg/gen/proto v0.0.0-20250210065821-5f5e8fe4640b
 	github.com/friendsofgo/errors v0.9.2
+	github.com/junsazanami430u/go-grpc-to-connect/pkg/gen/proto v0.0.0-20250308052335-4b4eddd4f142
 	github.com/stretchr/testify v1.10.0
 	golang.org/x/net v0.37.0
 )

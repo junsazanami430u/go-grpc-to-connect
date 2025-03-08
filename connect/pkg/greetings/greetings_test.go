@@ -9,10 +9,10 @@ import (
 
 	"connectrpc.com/connect"
 	"connectrpc.com/validate"
-	"github.com/baleen-dyamaguchi/go-grpc-to-connect/connect/pkg/interceptor"
-	"github.com/baleen-dyamaguchi/go-grpc-to-connect/connect/pkg/logger"
-	greetingsv1 "github.com/baleen-dyamaguchi/go-grpc-to-connect/pkg/gen/proto/greetings/v1"
-	"github.com/baleen-dyamaguchi/go-grpc-to-connect/pkg/gen/proto/greetings/v1/greetingsv1connect"
+	"github.com/junsazanami430u/go-grpc-to-connect/connect/pkg/interceptor"
+	"github.com/junsazanami430u/go-grpc-to-connect/connect/pkg/logger"
+	greetingsv1 "github.com/junsazanami430u/go-grpc-to-connect/pkg/gen/proto/greetings/v1"
+	"github.com/junsazanami430u/go-grpc-to-connect/pkg/gen/proto/greetings/v1/greetingsv1connect"
 	"github.com/stretchr/testify/assert"
 )
 
