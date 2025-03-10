@@ -4,6 +4,12 @@ TARGET_DIR="./connect"
 FILES=("go.work" "go.work.sum")
 SOURCE_DIR="./configs"
 
+if [ ! -d "$SOURCE_DIR" ]; then
+    echo "$SOURCE_DIR が存在しません。"
+    mkdir -p "$SOURCE_DIR"
+    exit 1
+fi
+
 # Check if the file exists
 for FILE_NAME in "${FILES[@]}"; do
     if [ -f "$TARGET_DIR/$FILE_NAME" ]; then
