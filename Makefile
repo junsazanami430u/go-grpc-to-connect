@@ -14,3 +14,10 @@ help:
 deps:
 	@echo "Installing dependencies..."
 	@./scripts/install-deps.sh
+
+## move workspace file
+.PHONY: move-workspace-file
+mv-go-work-file:
+	@echo "Moving workspace file..."
+	@./scripts/move-workspace-file.sh
+
