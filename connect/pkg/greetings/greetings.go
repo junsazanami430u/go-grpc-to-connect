@@ -9,7 +9,7 @@ import (
 	greetingsv1 "github.com/junsazanami430u/go-grpc-to-connect/pkg/gen/proto/greetings/v1"
 	"github.com/junsazanami430u/go-grpc-to-connect/pkg/gen/proto/greetings/v1/greetingsv1connect"
 
-	elizav1 "github.com/junsazanami430u/examples-go/pkg/eliza/gen/connectrpc/eliza/v1"
+	elizav1 "github.com/junsazanami430u/examples-go/pkg/eliza/buf/v1"
 )
 
 type GreetingsServer struct {

@@ -15,7 +15,7 @@ import (
 	"github.com/junsazanami430u/go-grpc-to-connect/pkg/gen/proto/greetings/v1/greetingsv1connect"
 
 	"github.com/junsazanami430u/examples-go/pkg/eliza"
-	elizav1connect "github.com/junsazanami430u/examples-go/pkg/eliza/gen/connectrpc/eliza/v1/elizav1connect"
+	elizav1connect "github.com/junsazanami430u/examples-go/pkg/eliza/buf/v1/bufv1connect"
 
 	"github.com/spf13/pflag"
 	"golang.org/x/net/http2"
@@ -53,7 +53,11 @@ func main() {
 	mux := http.NewServeMux()
 	path, handler := greetingsv1connect.NewGreetingsServiceHandler(&greetings.GreetingsServer{}, connect.WithInterceptors(validateInterceptor, interceptor.NewValidateInterceptor()))
 	mux.Handle(path, handler)
-	mux.Handle(elizav1connect.NewElizaServiceHandler(eliza.NewElizaServer(*streamDelayArg)))
+
+	//動作確認用
+	elizaPath, elizaHandler := elizav1connect.NewElizaServiceHandler(eliza.NewElizaServer(*streamDelayArg), connect.WithInterceptors(validateInterceptor, interceptor.NewValidateInterceptor()))
+	// elizaPath, elizaHandler := elizav1connect.NewElizaServiceHandler(eliza.NewElizaServer(*streamDelayArg))
+	mux.Handle(elizaPath, elizaHandler)
 
 	server := &http.Server{
 		Addr:    "localhost:8080",

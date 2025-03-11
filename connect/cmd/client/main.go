@@ -6,8 +6,8 @@ import (
 	"net/http"
 
 	"connectrpc.com/connect"
-	elizav1 "github.com/junsazanami430u/examples-go/pkg/eliza/gen/connectrpc/eliza/v1"
-	elizav1connect "github.com/junsazanami430u/examples-go/pkg/eliza/gen/connectrpc/eliza/v1/elizav1connect"
+	elizav1 "github.com/junsazanami430u/examples-go/pkg/eliza/buf/v1"
+	elizav1connect "github.com/junsazanami430u/examples-go/pkg/eliza/buf/v1/bufv1connect"
 	"github.com/junsazanami430u/go-grpc-to-connect/connect/pkg/logger"
 	greetingsv1 "github.com/junsazanami430u/go-grpc-to-connect/pkg/gen/proto/greetings/v1"
 	"github.com/junsazanami430u/go-grpc-to-connect/pkg/gen/proto/greetings/v1/greetingsv1connect"
@@ -45,4 +45,14 @@ func main() {
 		return
 	}
 	log.Info("eliza.client", "sentence", elizaRes.Msg.Sentence)
+
+	elizaResE, err := elizaClient.GoodBye(
+		ctx,
+		connect.NewRequest(&elizav1.GoodByeRequest{Sentence: "Goodbye ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg"}),
+	)
+	if err != nil {
+		log.Error("eliza.client", "error", err.Error())
+		return
+	}
+	log.Info("eliza.client", "sentence", elizaResE.Msg.Sentence)
 }

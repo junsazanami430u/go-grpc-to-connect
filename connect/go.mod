@@ -6,7 +6,7 @@ require (
 	connectrpc.com/connect v1.18.1
 	connectrpc.com/validate v0.2.0
 	github.com/friendsofgo/errors v0.9.2
-	github.com/junsazanami430u/examples-go/pkg/eliza v0.0.0-20250308074936-11b478fa78dc
+	github.com/junsazanami430u/examples-go/pkg/eliza v0.0.0-20250311050137-9b4ece954edc
 	github.com/junsazanami430u/go-grpc-to-connect/pkg/gen/proto v0.0.0-20250308052335-4b4eddd4f142
 	github.com/spf13/pflag v1.0.6
 	github.com/stretchr/testify v1.10.0

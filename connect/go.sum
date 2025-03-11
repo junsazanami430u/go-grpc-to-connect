@@ -350,8 +350,8 @@ github.com/julienschmidt/httprouter v1.2.0/go.mod h1:SYymIcj16QtmaHHD7aYtjjsJG7V
 github.com/julienschmidt/httprouter v1.3.0/go.mod h1:JR6WtHb+2LUe8TCKY3cZOxFyyO8IZAc4RVcycCCAKdM=
 github.com/julz/importas v0.2.0 h1:y+MJN/UdL63QbFJHws9BVC5RpA2iq0kpjrFajTGivjQ=
 github.com/julz/importas v0.2.0/go.mod h1:pThlt589EnCYtMnmhmRYY/qn9lCf/frPOK+WMx3xiJY=
-github.com/junsazanami430u/examples-go/pkg/eliza v0.0.0-20250308074936-11b478fa78dc h1:b1fnbyiwHap0JFCBE9dI7HpeSbzUkRfdzocts3Wrbec=
-github.com/junsazanami430u/examples-go/pkg/eliza v0.0.0-20250308074936-11b478fa78dc/go.mod h1:iI9Xh8CMjyMd6/tsCicsewYokXTsOuTAf4bkp/uiwvc=
+github.com/junsazanami430u/examples-go/pkg/eliza v0.0.0-20250311050137-9b4ece954edc h1:+dQkOz6nAkXOxG0e/3VzjOW7QtSjlmzc0nVO9M4IIo8=
+github.com/junsazanami430u/examples-go/pkg/eliza v0.0.0-20250311050137-9b4ece954edc/go.mod h1:TRe65Oxd/duXLu4ZZNynraEe+fNoGIC4PfHSgY5UJQQ=
 github.com/junsazanami430u/go-grpc-to-connect/pkg/gen/proto v0.0.0-20250308052335-4b4eddd4f142 h1:j1n+w6YeeTNXpp0WAKB2rG5ZjirMSLCZTt0+l3lrhrA=
 github.com/junsazanami430u/go-grpc-to-connect/pkg/gen/proto v0.0.0-20250308052335-4b4eddd4f142/go.mod h1:v2HmYVrNMSPcbhBly7JRF9DDhisqNDJCd3u4ReINOAE=
 github.com/karamaru-alpha/copyloopvar v1.2.1 h1:wmZaZYIjnJ0b5UoKDjUHrikcV0zuPyyxI4SVplLd2CI=
